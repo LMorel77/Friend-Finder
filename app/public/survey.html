@@ -202,7 +202,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h2 class="modal-title">
-                        <strong>Best Match</strong>
+                        <strong>Best Match(es)</strong>
                     </h2>
                 </div>
                 <div class="modal-body">
@@ -284,16 +284,17 @@
                 // AJAX post the data to the friends API.
                 $.post("/api/friends", userData, function (data) {
 
+                    console.log("\ndata:\n", data);
                     // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                    $("#match-name").text(data.name);
-                    $("#match-img").attr("src", data.photo);
+                    $("#match-name").text(data[0].name);
+                    $("#match-img").attr("src", data[0].photo);
 
                     // Show the modal with the best match
                     $("#results-modal").modal("toggle");
 
                 });
             } else {
-                alert("Please fill out all fields before submitting!");
+                alert("All fields are required! Please complete before submitting!");
             }
         });
 

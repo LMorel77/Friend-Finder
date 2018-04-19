@@ -5,10 +5,8 @@ var path = require('path');
 var app = express();
 var port = process.env.port || 8080;
 
-// parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
- 
-// parse application/json
+// parse application/x-www-form-urlencoded/json
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Routes
