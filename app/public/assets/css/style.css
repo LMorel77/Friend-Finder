@@ -1,0 +1,153 @@
+/* General Styling */
+body {
+    /* background: url("../images/friendpic2.jpg"); */
+    /* background-size: 100vw 100vh; */
+    /* background: linear-gradient(rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.3)),url("../images/friendpic2.jpg"); */
+    /* background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.9) 100%),url("../images/friendpic2.jpg"); */
+    background: linear-gradient(rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%),url("../images/friendpic1.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+}
+
+/* Navbar Styling */
+.navbar {
+    border: unset;
+}
+.navbar-brand {
+    font-family: 'Anton', sans-serif;
+    font-size: 42px;
+    line-height: 1.5;
+}
+
+.navbar-default {
+    background-color: rgb(247,65,114); /* For browsers that don't support gradient coloring */
+    background: linear-gradient(to right, rgb(247,65,114), rgb(247,116,91));
+    border-color: unset;
+    min-height: 100px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(to right, rgb(247,65,114), rgb(247,116,91));
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    outline: none;
+    padding: 15px 10px;
+    text-align: center;
+    width: 180px;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+button:hover {
+    background: rgb(247,116,91);
+}
+
+/* Home Page Branding Styling */
+#intro {
+    font-family: 'Anton', sans-serif;
+    margin: 52px 0;
+}
+
+.links {
+    color: rgb(247,65,114);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+#title1 {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#title2 {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#surveyInfo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    margin: 27px 0px;
+    text-align: justify;
+}
+
+.surveyButton {
+    margin: auto;
+    width: 37%;
+}
+
+a {
+    color: rgb(247,65,114);
+}
+
+/* Survey Page Styling */
+.survey {
+    background: white;
+    border-radius: 10px;
+}
+
+#surveyHeader {
+    color: rgb(247,65,114);
+    text-align: center;
+}
+
+#notice {
+    margin-bottom: 21px;
+    text-align: center;
+}
+
+.personalInfo {
+    margin: 10px 0;
+}
+
+.personalLabels {
+    font-size: 14px;
+}
+
+.surveyQuestions{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+
+.surveyResponses {
+    font-weight: normal;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.submitButton {
+    text-align: center;
+}
+
+.submitButton button {
+    width: 50%;
+}
+
+/* Modal Styling */
+#match-img {
+    height: 175px;
+    width: 275px;
+}
+
+.modal-content {
+    width: 110%;
+}
+.modal-title {
+    color: rgb(247,65,114);
+}

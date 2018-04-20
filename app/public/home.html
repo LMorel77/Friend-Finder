@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,41 +15,57 @@
 
     <!-- Font Awesome Glyphicons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+
+    <!-- Custom CSS (local and server path) -->
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
 
 </head>
 
 <body>
 
-    <div class="container">
+    <!-- NavBar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
 
-        <div class="jumbotron">
-            <h1>
-                <i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
-            <hr>
-            <h2>Answer a few basic questions. </h2>
-            <h2>Then find the friend with the greatest compatibility!</h2>
-            <br>
-
-            <div>
-                <a href="/survey">
-                    <button type="button" class="btn btn-lg btn-primary">
-                        <h4>
-                            <span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4>
-                    </button>
-                </a>
+                <a class="navbar-brand" href="/">
+                    <i class="fas fa-users" aria-hidden="true"></i> Friend Finder</a>
             </div>
-
         </div>
+    </nav>
 
-        <footer class="footer">
-            <div class="container">
-                <p>
-                    <a href="/api/friends">API Friends List</a> |
-                    <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a>
-                </p>
+    <!-- Home Page Branding -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <!-- Home Page Branding -->
+            <div class="col-md-6">
+                <div id="intro">
+                    <div id="title1">Meet new people.</div>
+                    <div id="title2">Make new friends.</div>
+                    <div id="surveyInfo">To get started, proceed to our survey, answer a few basic questions, and we'll then match you up with
+                        like-minded and interesting people like yourself!</div>
+                    <div class="surveyButton">
+                        <a href="/survey" target="_blank">
+                            <button>
+                                <span class="glyphicon glyphicon-list-alt"></span> Go to Survey</button>
+                        </a>
+                    </div>
+                    <div class="links">
+                        <p>
+                            <a href="/api/friends" target="_blank">API Friends List</a> |
+                            <a href="https://github.com/lmorel77/Friend-Finder" target="_blank">GitHub Repo</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-        </footer>
 
+            <div class="col-md-3"></div>
+        </div>
     </div>
 
 </body>

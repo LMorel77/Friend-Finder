@@ -7,6 +7,7 @@ module.exports = function (app) {
         response.json(friends);
     });
 
+    // Avatars...for testing purposes
     // Female avatar: https://www.bandbtaos.com/images/avatar.png
     // Male avatar: http://saargn.com/wp-content/uploads/2017/08/mrlim.png
 

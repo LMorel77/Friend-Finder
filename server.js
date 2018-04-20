@@ -5,6 +5,8 @@ var path = require('path');
 var app = express();
 var port = process.env.port || 8080;
 
+app.use(express.static(path.join(__dirname, '/app/public')));
+
 // parse application/x-www-form-urlencoded/json
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
